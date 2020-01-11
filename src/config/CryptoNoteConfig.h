@@ -27,7 +27,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_MAX_TX_SIZE = 1000000000;
 
-        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 3914525;
+        const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x12f9;
 
         const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 40;
 
@@ -42,15 +42,15 @@ namespace CryptoNote
         const size_t BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V3 = 11;
 
         // MONEY_SUPPLY - total number coins to be generated
-        const uint64_t MONEY_SUPPLY = UINT64_C(100000000000000);
+        const uint64_t MONEY_SUPPLY = UINT64_C(21000000000000000);
 
-        const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 187000;
+        const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX = 0;
 
         const size_t ZAWY_DIFFICULTY_V2 = 0;
 
         const uint8_t ZAWY_DIFFICULTY_DIFFICULTY_BLOCK_VERSION = 3;
 
-        const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX = 620000;
+        const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX = 1;
 
         const uint64_t LWMA_2_DIFFICULTY_BLOCK_INDEX_V2 = 700000;
 
@@ -85,7 +85,7 @@ namespace CryptoNote
 
         const size_t CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE = 600;
 
-        const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 2;
+        const size_t CRYPTONOTE_DISPLAY_DECIMAL_POINT = 8;
 
         /* TODO: Remove? */
         const uint64_t MINIMUM_FEE = UINT64_C(10);
@@ -114,16 +114,16 @@ namespace CryptoNote
 
         const uint64_t MAXIMUM_MIXIN_V2 = 7;
 
-        const uint64_t MINIMUM_MIXIN_V3 = 3;
+        const uint64_t MINIMUM_MIXIN_V3 = 5;
 
-        const uint64_t MAXIMUM_MIXIN_V3 = 3;
+        const uint64_t MAXIMUM_MIXIN_V3 = 5;
 
         /* The heights to activate the mixin limits at */
-        const uint32_t MIXIN_LIMITS_V1_HEIGHT = 440000;
+        const uint32_t MIXIN_LIMITS_V1_HEIGHT = 210000;
 
-        const uint32_t MIXIN_LIMITS_V2_HEIGHT = 620000;
+        const uint32_t MIXIN_LIMITS_V2_HEIGHT = 350000;
 
-        const uint32_t MIXIN_LIMITS_V3_HEIGHT = 800000;
+        const uint32_t MIXIN_LIMITS_V3_HEIGHT = 400000;
 
         /* The mixin to use by default with zedwallet and turtle-service */
         /* DEFAULT_MIXIN_V0 is the mixin used before MIXIN_LIMITS_V1_HEIGHT is started */
@@ -250,9 +250,9 @@ namespace CryptoNote
 
         /* Block heights we are going to have hard forks at */
         const uint64_t FORK_HEIGHTS[] = {
-            187000, // 0
-            350000, // 1
-            440000, // 2
+            135000, // 0
+            360000, // 1
+            450000, // 2
             620000, // 3
             700000, // 4
             800000, // 5
@@ -281,7 +281,7 @@ namespace CryptoNote
 
            This will default to zero if the FORK_HEIGHTS array is empty, so you don't
            need to change it manually. */
-        const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : SOFTWARE_SUPPORTED_FORK_INDEX;
+        const uint8_t CURRENT_FORK_INDEX = FORK_HEIGHTS_SIZE == 0 ? 0 : 0;
 
         /* Make sure CURRENT_FORK_INDEX is a valid index, unless FORK_HEIGHTS is empty */
         static_assert(
@@ -299,7 +299,7 @@ namespace CryptoNote
         const char MINER_CONFIG_FILE_NAME[] = "miner_conf.json";
     } // namespace parameters
 
-    const char CRYPTONOTE_NAME[] = "TurtleCoin";
+    const char CRYPTONOTE_NAME[] = "Gib Cash";
 
     const uint8_t TRANSACTION_VERSION_1 = 1;
 
@@ -380,7 +380,7 @@ namespace CryptoNote
     const std::string LICENSE_URL = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
-        {0xb5, 0x0c, 0x4a, 0x6c, 0xcf, 0x52, 0x57, 0x41, 0x65, 0xf9, 0x91, 0xa4, 0xb6, 0xc1, 0x43, 0xe9}};
+       { 0xB1, 0xB3, 0xB5, 0xB7, 0xB9, 0x5i, 0x7i, 0x9i, 0xcu, 0xcs, 0xc5, 0xc7, 0xc9, 0xc3, 0xc1, 0xD2 }};
 
     const char *const SEED_NODES[] = {
         "206.189.142.142:11897", // rock
