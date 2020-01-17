@@ -19,7 +19,7 @@ namespace CryptoNote
 {
     namespace parameters
     {
-        const uint64_t DIFFICULTY_TARGET = 3600; // seconds
+        const uint64_t DIFFICULTY_TARGET = 300; // seconds
 
         const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER = 500000000;
 
@@ -29,7 +29,7 @@ namespace CryptoNote
 
         const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x12f9;
 
-        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 50;
+        const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW = 240;
 
         const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT = 60 * 60 * 2;
 
@@ -234,9 +234,9 @@ namespace CryptoNote
 
         const uint32_t UPGRADE_HEIGHT_V3 = 2;
 
-        const uint32_t UPGRADE_HEIGHT_V4 = 350000; // Upgrade height for CN-Lite Variant 1 switch.
+        const uint32_t UPGRADE_HEIGHT_V4 = 3500; // Upgrade height for CN-Lite Variant 1 switch.
 
-        const uint32_t UPGRADE_HEIGHT_V5 = 1200000; // Upgrade height for CN-Turtle Variant 2 switch.
+        const uint32_t UPGRADE_HEIGHT_V5 = 12000; // Upgrade height for CN-Turtle Variant 2 switch.
 
         const uint32_t UPGRADE_HEIGHT_V6 = 1800000; // Upgrade height for Chukwa switch.
 
