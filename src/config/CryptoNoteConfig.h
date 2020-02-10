@@ -61,7 +61,7 @@ namespace CryptoNote
         static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
         const char GENESIS_COINBASE_TX_HEX[] =
-            "012801ff000188f3b501029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101a7c5b2cac43fc5f37ab2427aedb773304378b116b703b0ea55130a0d440a2c65";
+            "";
 
         static_assert(
             sizeof(GENESIS_COINBASE_TX_HEX) / sizeof(*GENESIS_COINBASE_TX_HEX) != 1,
@@ -374,15 +374,15 @@ namespace CryptoNote
     const uint32_t DATABASE_DEFAULT_MAX_OPEN_FILES = 125; // 125 files
     const uint16_t DATABASE_DEFAULT_BACKGROUND_THREADS_COUNT = 4; // 4 DB threads
 
-    const char LATEST_VERSION_URL[] = "http://latest.turtlecoin.lol";
+    const char LATEST_VERSION_URL[] = "";
 
-    const std::string LICENSE_URL = "https://github.com/turtlecoin/turtlecoin/blob/master/LICENSE";
+    const std::string LICENSE_URL = "turtlecoin/blob/master/LICENSE";
 
     const static boost::uuids::uuid CRYPTONOTE_NETWORK = {
        { 0xB1, 0xB3, 0xB5, 0xB7, 0xB9, 0x5i, 0x7i, 0x9i, 0xcu, 0xcs, 0xc5, 0xc7, 0xc9, 0xc3, 0xc1, 0xD2 }};
 
     const char *const SEED_NODES[] = {
-        "13.92.63.45:11899", // rock
+        "52.179.12.202", // rock
         "145.239.88.119:11991", // cision
      
     };
